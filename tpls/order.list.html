@@ -1,1 +1,23 @@
-order list
+<!--<pre>{{ orders | json }}</pre>-->
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<td>id</td>
+			<td>status</td>
+			<td>total</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat-start="order in orders" ng-click="order.show = 1">
+			<td>{{ order.id }}</td>
+			<td>{{ order.status }}</td>
+			<td>{{ order.total | currency }}</td>
+		</tr>
+		<tr ng-repeat-end ng-show="order.show">
+			<td colspan="3">
+				<pre>{{ order.items | json }}</pre>
+			</td>
+		</tr>
+	</tbody>
+</table>

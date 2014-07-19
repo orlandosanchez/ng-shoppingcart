@@ -1,5 +1,8 @@
-shoppingCart.controller('OrderCtrl', ['$scope', '$routeParams', 'OrdersService', 
-function($scope, $routeParams, itemsService) {
+shoppingCart.controller('OrderCtrl', ['$scope', '$routeParams', 'ordersService', 
+function($scope, $routeParams, ordersService) {
+	ordersService.getOrders(function(data) {
+		$scope.orders = data;
+	});
 }]);
 
 shoppingCart.controller('ListCtrl', ['$scope', '$routeParams', 'itemsService', 
