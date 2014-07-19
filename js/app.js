@@ -8,7 +8,7 @@ shoppingCart.config(['$routeProvider', function($routeProvider) {
 	})
 	.when('/item/:id', {
 		templateUrl	: '../tpls/item.html',
-		controller 	: 'ListCtrl'
+		controller 	: 'ItemCtrl'
 	})
 
 	$routeProvider.otherwise({ redirectTo : '/list'});
