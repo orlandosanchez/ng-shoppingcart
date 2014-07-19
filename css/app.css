@@ -1,0 +1,17 @@
+body {
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #595959;
+}
+
+ul.items {
+	padding: 0px;
+}
+ul.items > li {
+	padding: 10px 0px;
+	list-style-type: none;
+}
+.dropdown-menu > li > a,
+.nav > li > a {
+	cursor: pointer;
+}
