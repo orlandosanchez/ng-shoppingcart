@@ -1,9 +1,9 @@
 [
-				{ "name" : "Salad", "category" : "Vegetarian", "qty" : 0 },
-				{ "name" : "Steak", "category" : "Paleo", "qty" : 0 },
-				{ "name" : "Nuts", "category" : "Vegetarian", "qty" : 0 },
-				{ "name" : "Cereal", "category" : "Vegetarian", "qty" : 0 },
-				{ "name" : "Pork", "category" : "Paleo", "qty" : 0 },
-				{ "name" : "Beans", "category" : "Vegetarian", "qty" : 0 },
-				{ "name" : "Chicken", "category" : "South Beach", "qty" : 0 }
+				{ "id" : 1, "name" : "Salad", "category" : "Vegetarian", "qty" : 0 },
+				{ "id" : 2, "name" : "Steak", "category" : "Paleo", "qty" : 0 },
+				{ "id" : 3, "name" : "Nuts", "category" : "Vegetarian", "qty" : 0 },
+				{ "id" : 4, "name" : "Cereal", "category" : "Vegetarian", "qty" : 0 },
+				{ "id" : 5, "name" : "Pork", "category" : "Paleo", "qty" : 0 },
+				{ "id" : 6, "name" : "Beans", "category" : "Vegetarian", "qty" : 0 },
+				{ "id" : 7, "name" : "Chicken", "category" : "South Beach", "qty" : 0 }
 ]	

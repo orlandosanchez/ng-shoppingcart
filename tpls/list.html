@@ -1,6 +1,8 @@
 <!--<pre>{{ items | json }}</pre>-->
 <!--http://stackoverflow.com/questions/22626916/increment-decrement-quantity-with-angular-form-->
 
+
+
 <div ng-include="'tpls/navbar.html'"></div>
 
 <div class="row">
@@ -8,20 +10,7 @@
 	<li ng-repeat="item in items | filter : { name : nameFilter } | filter : { category : category }" 
 		class="pull-left col-lg-3 text-center"
 		style="padding: 20px 0px;">
-		<a href="#/item/{{$index}}">
-			<img 
-				style="border: 1px solid #000;"
-				src="http://lorempixel.com/250/250/food/{{$index}}/{{item.name}}" />
-		</a>
-		<br />
-		<br />
-		<button 
-			class="btn btn-info btn-xs" 
-			ng-click="item.qty = item.qty + 1">add</button>
-		<input class="input-sm" type="text" ng-model="item.qty" />
-		<button 
-			class="btn btn-info btn-xs" 
-			ng-click="item.qty = item.qty - 1">del</button>
+		<item details="item"></item>
 	</li>
 </ul>
 </div>
